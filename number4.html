@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>calculator</title>
+        <meta charset="UTF-8"/>
+
+        <script>
+            function sum(){
+                 let num1= parseFloat(document.getElementById("fvalue")).value;
+                 let num2= parseFloat(document.getElementById("svalue")).value;
+                let result= num1+num2;
+                document.getElementById("output").innerHTML=result;
+            }
+
+            function subtract(num1,num2){
+                 num1= document.getElementById("fvalue").value;
+                 num2= document.getElementById("svalue").value;
+                let minus=num1-num2;
+                document.getElementById("output").innerHTML=minus;
+            }
+
+            function multiply(num1,num2){
+                 num1= document.getElementById("fvalue").value;
+                 num2= document.getElementById("svalue").value;
+                let times=num1*num2;
+                document.getElementById("output").innerHTML=times;
+            }
+        </script>
+    </head>
+
+    <body>
+        <label for="fvalue">First Value:</label><br>
+        <input type="number" id="fvalue"><br>
+        <label for="svalue">Second Value:</label><br>
+        <input type="number" id="svalue"><br>
+        <br> 
+        <label for="buttons">Operations: </label><br>
+        <button type="button" class="buttons" id="plus" onclick="sum()">+</button>
+        <button type="button" class="buttons" id="minus" onclick="subtract()"> - </button>
+        <button type="button" class="buttons" id="times" onclick="multiply()">x</button>
+        <br><br>
+        <label for="output">Result:</label><br>
+        <span id="output"></span>
+    
+    </body>
+
+
+</html>

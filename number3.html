@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input_output</title>
+
+    <script>
+        function inputSwap(){
+        const due= document.getElementById("input").value;
+        document.getElementById("output").value= due;
+        document.getElementById("input").value="";
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <label for="input">Input:</label><br>
+    <input type="text" id="input" /> <br>
+    <label for="output">Output:</label><br>
+    <textarea rows="7" cols="30" id="output"></textarea><br>
+    <button onclick="inputSwap()" >Click to Add</button>
+
+</body>
+</html>
